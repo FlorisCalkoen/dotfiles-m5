@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git branch:*)",
+      "Bash(git show:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(rg:*)",
+      "Bash(brew bundle check:*)",
+      "Bash(brew bundle list:*)",
+      "Bash(shellcheck:*)"
+    ],
+    "deny": [
+      "Read(./git/gitconfig.local.symlink)",
+      "Read(./**/*.env)",
+      "Read(./**/.env.*)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(git commit:*)",
+      "Bash(brew install:*)",
+      "Bash(brew bundle:*)",
+      "Bash(gem install:*)",
+      "Bash(curl:*)",
+      "Bash(wget:*)",
+      "Bash(script/bootstrap:*)",
+      "Bash(script/install:*)",
+      "Bash(bin/dot:*)"
+    ]
+  }
+}
